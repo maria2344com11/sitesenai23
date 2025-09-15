@@ -1,0 +1,119 @@
+/*definição padrão da página*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+html, body {
+  height: 100%;          /* faz a página ocupar 100% da tela */
+  margin: 0;             /* tira margens padrão */
+  display: flex;         
+  flex-direction: column; /* organiza de cima pra baixo */
+}
+
+/*header*/
+.topo{
+  display: flex;
+  justify-content: flex-end; /* alinha todos os itens à direita */
+  align-items: center;       /* centraliza verticalmente */
+  gap: 15px;                 /* espaço entre links, ícone e botão */
+  padding: 30px 50px;        /* 30px em cima/baixo, 50px nas laterais */
+}
+
+.topo a {
+  text-decoration: none;
+  color: black;
+}
+.topo a:hover {
+  text-decoration: underline; /* mostra o sublinhado ao passar o mouse */
+}
+
+/*login*/
+.button {
+  background-color: #0b57d0;;
+  color: white;
+  border-radius: 40px;
+  height: 40px;
+  width: 90px;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+
+header img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;   
+    flex-direction: column;
+     flex: 1; /*specifica quanto do espaço disponível dentro de um contêiner um elemento deve ocupar, em relação aos outros elementos*/
+     
+}
+
+.img{
+    width: 25%;
+    max-width: 40%;
+    height: auto;
+}
+
+
+input{
+  width: 400px;/*tamanho*/
+  padding: 15px 15px 15px 45px; /* 15px em cima,15px à direita,15px embaixo,45px à esquerda (para abrir espaço para a lupa) */
+  border-radius: 25px;
+  background: url('./img/lupa.PNG') no-repeat 15px center; /* caminho da lupa */
+  margin-top: -30px; /* ou qualquer valor negativo que funcione */
+  border: 1px solid #474747;
+}
+
+.caixinhas {
+  display: flex;
+  justify-content: center; /* centraliza os botões na tela */
+  gap: 20px;                /* espaço entre os botões */
+  margin-top: 15px;         /* espaço acima do grupo de botões */
+}
+
+.caixinhas button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f7f8f9;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+footer {
+  background-color: #f7f8f9;;
+  
+}
+
+.rodape-topo {
+  padding: 15px 30px;
+  background-color: #f7f8f9;
+  
+}
+
+.rodape-baixo {
+  background-color: #f7f8f9;
+  border-top: 1px solid #dadce0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.links-rodape a {
+  margin-right: 20px;
+  color: #70757a;
+  text-decoration: none;
+}
+
